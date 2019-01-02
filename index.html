@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CP3WebGL</title>
+  <meta charset="utf-8">
+  <meta name="CP3WebGL" author="GuoJun Han">
+  <script src="js/three.js"></script>
+  <script src="js/Detector.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/OBJLoader.js"></script>
+  <script src="js/MTLLoader.js"></script>
+  <script src="js/RGBELoader.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/jquery.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./styling.css">
+</head>
+
+<body>
+  <!-- burger -->
+  <div class="fullscreen-wrapper">
+    <i class="fullscreen-icon"></i>
+  </div>
+
+  <!-- 1.CP3Main -->
+  <div class="bg-model">
+    <div class="model-content">
+    <div class="color-content">
+      <i class="logo-main"></i>
+    </div>
+    <div class="close">+</div>
+    <p class="component-name">The Main unit</p>
+    <p class="component-content">
+      The instrument has two main comp-<br>onents:<br>
+      1.The Main Unit<br>
+      2.The LN/ethane holder<br>
+      <br>
+The Main Unit
+The LN/ethane holder
+The Main unit has a plunge rod, tim-<br>er controls, and pneumatics air sys-<br>tem that can power the parts and control the blotting.
+<br>The LN/ethane holder is the section that is detachable and is where the actual freezing process happens.
+    </p>
+    </div>
+  </div>
+
+  <!-- 2.Workstation -->
+  <div class="bg-model2">
+    <div class="model-content2">
+      <div class="color-content2">
+        <i class="logo-workstation"></i>
+      </div>
+    <div class="close2">+</div>
+    <p class="component-name2">Workstation</p>
+    <p class="component-content2">
+      Components within the workstation:<br>
+      1.Ethane cup<br>
+      2.Liquid nitrogen holder<br>
+      3.Liquid nitrogen filling cup<br>
+      4.Cassette holder<br>
+      <br>Ethane is the key element in cryoEM sam-<br>ple preparation. Ethane, in liquid state, is colder than -180 degrees Celsius. At this temperature, water will freeze so quickly, it cannot form crystalline ice—it forms vitreo-<br>us ice. <br>
+      Vitreous ice is needed for data collection in cryoEM. In this reservoir, ethane, in gas form, is dispensed into the liquid nitrogen pre-cooled, empty, ethane cup. When cold enough, as the ethane gas is dispensed, it will turn into a liquid. Ethane is very flamm-<br>able, so it should be handled with caution.
+    </p>
+    </div>
+  </div>
+
+
+  <!-- 3.Plunger -->
+  <div class="bg-model3">
+    <div class="model-content3">
+      <div class="color-content3">
+        <i class="logo-plunger"></i>
+      </div>
+    <div class="close3">+</div>
+    <p class="component-name3">Plunger</p>
+    <p class="component-content3">
+      The plunger is where the sample and twee-<br>zers are suspended from. There are cust-<br>om tweezers with a hole on the top that are used specifically for suspending them in the plunge rod. The plunge rod is a metal piece with a handle on top that goes throu-<br>gh the humidity chamber.<br>
+      <br>Also, there is a blue button on the plunger. This is used to indicate the direction in which you need to insert the tweezers. Blue button facing you = tweezers + grid surface facing you. This piece is essential in the freezing process.
+    </p>
+    </div>
+  </div>
+
+
+  <!-- 4.Plunging tweezers -->
+  <div class="bg-model4">
+    <div class="model-content4">
+      <div class="color-content4">
+        <i class="logo-tweezer"></i>
+      </div>
+    <div class="close4">+</div>
+    <p class="component-name4">Plunging tweezers</p>
+    <p class="component-content4">
+      These tweezers have 3 important components:<br>
+    a.Super-fine tip to avoid wicking away sa-<br>mple—this part is very fragile. Inaccurate plunging can easily damage this part. A broken tip will not provide a secure grid hold.
+    <br>b.Shallow slits on the side used for the clasping accessory to securely hold the grid in place
+    <br>c.A hole on the end to suspend the twee-<br>zers + grid on the plunger
+    Also, plunging tweezers are not self-closing. They need a separate, typically plastic clasping device to hold keep the tweezers closed and grid secured during the procedure.
+    </p>
+    </div>
+  </div>
+
+  <!-- 5.blotters -->
+  <div class="bg-model5">
+    <div class="model-content5">
+      <div class="color-content5">
+        <i class="logo-blotter"></i>
+      </div>
+    <div class="close5">+</div>
+    <p class="component-name5">Blotters</p>
+    <p class="component-content5">
+      The blotters are what physically touch the grid when it is suspended from the twee-<br>zers in the humidity chamber. The time they will touch your sample is controlled on the order of sec and millisec using the blotting timer gauge on the top portion of the Main Unit--it has a digital display that can show the time.
+      <br>There are two, removable blotters mounted on either side of the CP3. The blotters are meant to be re-loaded with new blotting paper, such as Whatman 1, for every ses-<br>sion. The blotters also have 1 side mark which indicated usage. In practice, only 1/4th of the blotting paper is used per blot, so instead of reloading blotting paper for every time you blot.
+    </p>
+    </div>
+  </div>
+
+  <!-- 6.Humidity chamber -->
+  <div class="bg-model6">
+    <div class="model-content6">
+      <div class="color-content6">
+        <i class="logo-humidity"></i>
+      </div>
+    <div class="close6">+</div>
+    <p class="component-name6">Humidity chamber</p>
+    <p class="component-content6">
+      This area is designated for holding the suspended tweezers, and, as the name implies, it keeps the sa-<br>mple in a humid chamber to prev-<br>ent the small volumes of liquid on the grid from evaporating.<br>
+      When working with cryo-EM sample preparation, scientists are working on the order of ul -- or thousands of a milliliter.
+    </p>
+    </div>
+  </div>
+
+  <!-- 7.Hygrometer -->
+  <div class="bg-model7">
+    <div class="model-content7">
+      <div class="color-content7">
+        <i class="logo-hygrometer"></i>
+      </div>
+    <div class="close7">+</div>
+    <p class="component-name7">Hygrometer</p>
+    <p class="component-content7">
+       When working with such small amounts of liquid in cryo-EM sample preparation--microliters--evaporation is a big risk. To circumvent this issue, the CP3 uses a humidity chamber where your grid+sample is suspended in.
+       <br>The hygrometer is a metal rod located within the humidity chamber than can read out the humidity of the chamber in percent values. A standard operating humidity for sample preparation in the CP3 is anywhere from 80-100% humidity.
+    </p>
+    </div>
+  </div>
+
+  <!-- 8.Sponge -->
+  <div class="bg-model8">
+    <div class="model-content8">
+      <div class="color-content8">
+        <i class="logo-sponge"></i>
+      </div>
+    <div class="close8">+</div>
+    <p class="component-name8">Sponge</p>
+    <p class="component-content8">
+      The sponge is a long, rectangular, removable element in the CP3 that is soaked and inserted into the humidity chamber before operating the machine. It is a constant source of humidity that can help prevent sample evaporation. Inserting a wet sponge in the CP3 is among the first steps in grid freezing.
+
+    </p>
+    </div>
+  </div>
+
+  <!-- <div class="wrapper">
+    <button class="button">full screen</button>
+  </div> -->
+
+  <script src="js/main.js"></script>
+  <script src="js/fullscreen.js"></script>
+</body>
+</html>
